@@ -8,8 +8,11 @@ Make File
 Currently the `make` file is only used to create .dmg image out of the app folder.
 
 ```
-hdiutil create BirdDrop.dmg -srcfolder BirdDrop.app/ -ov
+hdiutil create BirdDrop.dmg -srcfolder "`find /Users/\`whoami\`/Library/Developer/Xcode/DerivedData/BirdDrop* | grep .app$`" -ov
 ```
+
+Finds where the compiled dir and generates .dmg in current dir.
+
 
 Twitter Account
 ===============
