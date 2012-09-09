@@ -1,0 +1,16 @@
+BirdDrop
+========
+
+Ever wonder if there was a better way to drag and drop stuff on your OSX? Well now there is. Just shake your mouse and a tiny window will appear momentarily drag your item there, switch to another app and the tiny window will stay there so you can drag your item from it with ease. Special CMD + CTRL + V shortcut keys can be used to show/hide BirdDrop as well.
+
+Make File
+=========
+Currently the `make` file is only used to create .dmg image out of the app folder.
+
+```
+hdiutil create BirdDrop.dmg -srcfolder BirdDrop.app/ -ov
+```
+
+Twitter Account
+===============
+Stay on top of the development cycle by following @soheil on Twitter.

@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B1B926A15F71643008F8AFC /* Window.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1B926915F71643008F8AFC /* Window.m */; };
+		5B7C852615F814EF00D6E231 /* Status.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B7C852415F814EF00D6E231 /* Status.png */; };
+		5B7C852715F814EF00D6E231 /* StatusHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B7C852515F814EF00D6E231 /* StatusHighlighted.png */; };
+		5BBA0F7015F1DE3900B2BDC2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BBA0F6F15F1DE3900B2BDC2 /* Cocoa.framework */; };
+		5BBA0F7A15F1DE3900B2BDC2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BBA0F7815F1DE3900B2BDC2 /* InfoPlist.strings */; };
+		5BBA0F7C15F1DE3900B2BDC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBA0F7B15F1DE3900B2BDC2 /* main.m */; };
+		5BBA0F8315F1DE3900B2BDC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBA0F8215F1DE3900B2BDC2 /* AppDelegate.m */; };
+		5BBA0F8615F1DE3A00B2BDC2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BBA0F8415F1DE3A00B2BDC2 /* MainMenu.xib */; };
+		5BE9004215F8364D00DEB7C4 /* MenubarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE9003D15F835D100DEB7C4 /* MenubarController.m */; };
+		5BE9004415F8364D00DEB7C4 /* StatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE9003F15F835D100DEB7C4 /* StatusItemView.m */; };
+		5BEB87EB15F67C6200C9A007 /* Matrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEB87EA15F67C6200C9A007 /* Matrix.m */; };
+		5BEB87EF15F67C9300C9A007 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEB87EE15F67C9300C9A007 /* Cell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5B1B926815F71643008F8AFC /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		5B1B926915F71643008F8AFC /* Window.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Window.m; sourceTree = "<group>"; };
+		5B7C852415F814EF00D6E231 /* Status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Status.png; sourceTree = "<group>"; };
+		5B7C852515F814EF00D6E231 /* StatusHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusHighlighted.png; sourceTree = "<group>"; };
+		5BBA0F6B15F1DE3900B2BDC2 /* BirdDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirdDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BBA0F6F15F1DE3900B2BDC2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5BBA0F7215F1DE3900B2BDC2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5BBA0F7315F1DE3900B2BDC2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5BBA0F7415F1DE3900B2BDC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5BBA0F7715F1DE3900B2BDC2 /* BirdDrop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BirdDrop-Info.plist"; sourceTree = "<group>"; };
+		5BBA0F7915F1DE3900B2BDC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5BBA0F7B15F1DE3900B2BDC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5BBA0F7D15F1DE3900B2BDC2 /* BirdDrop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BirdDrop-Prefix.pch"; sourceTree = "<group>"; };
+		5BBA0F8115F1DE3900B2BDC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5BBA0F8215F1DE3900B2BDC2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5BBA0F8515F1DE3A00B2BDC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5BE9003C15F835D100DEB7C4 /* MenubarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenubarController.h; sourceTree = "<group>"; };
+		5BE9003D15F835D100DEB7C4 /* MenubarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenubarController.m; sourceTree = "<group>"; };
+		5BE9003E15F835D100DEB7C4 /* StatusItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatusItemView.h; sourceTree = "<group>"; };
+		5BE9003F15F835D100DEB7C4 /* StatusItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatusItemView.m; sourceTree = "<group>"; };
+		5BEB87E915F67C6200C9A007 /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix.h; sourceTree = "<group>"; };
+		5BEB87EA15F67C6200C9A007 /* Matrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Matrix.m; sourceTree = "<group>"; };
+		5BEB87ED15F67C9300C9A007 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		5BEB87EE15F67C9300C9A007 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BBA0F6815F1DE3900B2BDC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BBA0F7015F1DE3900B2BDC2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B7C852215F814D800D6E231 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5B7C852415F814EF00D6E231 /* Status.png */,
+				5B7C852515F814EF00D6E231 /* StatusHighlighted.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		5BBA0F6015F1DE3900B2BDC2 = {
+			isa = PBXGroup;
+			children = (
+				5BBA0F7515F1DE3900B2BDC2 /* BirdDrop */,
+				5BBA0F6E15F1DE3900B2BDC2 /* Frameworks */,
+				5BBA0F6C15F1DE3900B2BDC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5BBA0F6C15F1DE3900B2BDC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BBA0F6B15F1DE3900B2BDC2 /* BirdDrop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BBA0F6E15F1DE3900B2BDC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BBA0F6F15F1DE3900B2BDC2 /* Cocoa.framework */,
+				5BBA0F7115F1DE3900B2BDC2 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BBA0F7115F1DE3900B2BDC2 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BBA0F7215F1DE3900B2BDC2 /* AppKit.framework */,
+				5BBA0F7315F1DE3900B2BDC2 /* CoreData.framework */,
+				5BBA0F7415F1DE3900B2BDC2 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		5BBA0F7515F1DE3900B2BDC2 /* BirdDrop */ = {
+			isa = PBXGroup;
+			children = (
+				5BE9003C15F835D100DEB7C4 /* MenubarController.h */,
+				5BE9003D15F835D100DEB7C4 /* MenubarController.m */,
+				5BE9003E15F835D100DEB7C4 /* StatusItemView.h */,
+				5BE9003F15F835D100DEB7C4 /* StatusItemView.m */,
+				5B7C852215F814D800D6E231 /* Images */,
+				5BBA0F7615F1DE3900B2BDC2 /* Supporting Files */,
+				5BEB87E915F67C6200C9A007 /* Matrix.h */,
+				5BEB87EA15F67C6200C9A007 /* Matrix.m */,
+				5BBA0F8115F1DE3900B2BDC2 /* AppDelegate.h */,
+				5BBA0F8215F1DE3900B2BDC2 /* AppDelegate.m */,
+				5B1B926815F71643008F8AFC /* Window.h */,
+				5B1B926915F71643008F8AFC /* Window.m */,
+				5BEB87ED15F67C9300C9A007 /* Cell.h */,
+				5BEB87EE15F67C9300C9A007 /* Cell.m */,
+			);
+			path = BirdDrop;
+			sourceTree = "<group>";
+		};
+		5BBA0F7615F1DE3900B2BDC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BBA0F8415F1DE3A00B2BDC2 /* MainMenu.xib */,
+				5BBA0F7715F1DE3900B2BDC2 /* BirdDrop-Info.plist */,
+				5BBA0F7815F1DE3900B2BDC2 /* InfoPlist.strings */,
+				5BBA0F7B15F1DE3900B2BDC2 /* main.m */,
+				5BBA0F7D15F1DE3900B2BDC2 /* BirdDrop-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BBA0F6A15F1DE3900B2BDC2 /* BirdDrop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BBA0F8915F1DE3A00B2BDC2 /* Build configuration list for PBXNativeTarget "BirdDrop" */;
+			buildPhases = (
+				5BBA0F6715F1DE3900B2BDC2 /* Sources */,
+				5BBA0F6815F1DE3900B2BDC2 /* Frameworks */,
+				5BBA0F6915F1DE3900B2BDC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BirdDrop;
+			productName = BirdDrop;
+			productReference = 5BBA0F6B15F1DE3900B2BDC2 /* BirdDrop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BBA0F6215F1DE3900B2BDC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Soheil Yasrebi";
+			};
+			buildConfigurationList = 5BBA0F6515F1DE3900B2BDC2 /* Build configuration list for PBXProject "BirdDrop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				English,
+			);
+			mainGroup = 5BBA0F6015F1DE3900B2BDC2;
+			productRefGroup = 5BBA0F6C15F1DE3900B2BDC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BBA0F6A15F1DE3900B2BDC2 /* BirdDrop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BBA0F6915F1DE3900B2BDC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BBA0F7A15F1DE3900B2BDC2 /* InfoPlist.strings in Resources */,
+				5BBA0F8615F1DE3A00B2BDC2 /* MainMenu.xib in Resources */,
+				5B7C852615F814EF00D6E231 /* Status.png in Resources */,
+				5B7C852715F814EF00D6E231 /* StatusHighlighted.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BBA0F6715F1DE3900B2BDC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BE9004215F8364D00DEB7C4 /* MenubarController.m in Sources */,
+				5BE9004415F8364D00DEB7C4 /* StatusItemView.m in Sources */,
+				5BBA0F7C15F1DE3900B2BDC2 /* main.m in Sources */,
+				5BBA0F8315F1DE3900B2BDC2 /* AppDelegate.m in Sources */,
+				5BEB87EB15F67C6200C9A007 /* Matrix.m in Sources */,
+				5BEB87EF15F67C9300C9A007 /* Cell.m in Sources */,
+				5B1B926A15F71643008F8AFC /* Window.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5BBA0F7815F1DE3900B2BDC2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BBA0F7915F1DE3900B2BDC2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5BBA0F8415F1DE3A00B2BDC2 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BBA0F8515F1DE3A00B2BDC2 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5BBA0F8715F1DE3A00B2BDC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5BBA0F8815F1DE3A00B2BDC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5BBA0F8A15F1DE3A00B2BDC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BirdDrop/BirdDrop-Prefix.pch";
+				INFOPLIST_FILE = "BirdDrop/BirdDrop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5BBA0F8B15F1DE3A00B2BDC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BirdDrop/BirdDrop-Prefix.pch";
+				INFOPLIST_FILE = "BirdDrop/BirdDrop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BBA0F6515F1DE3900B2BDC2 /* Build configuration list for PBXProject "BirdDrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BBA0F8715F1DE3A00B2BDC2 /* Debug */,
+				5BBA0F8815F1DE3A00B2BDC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BBA0F8915F1DE3A00B2BDC2 /* Build configuration list for PBXNativeTarget "BirdDrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BBA0F8A15F1DE3A00B2BDC2 /* Debug */,
+				5BBA0F8B15F1DE3A00B2BDC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BBA0F6215F1DE3900B2BDC2 /* Project object */;
+}
