@@ -11,7 +11,7 @@ Currently the `make` file is only used to create a .dmg image out of the app fol
 hdiutil create BirdDrop.dmg -srcfolder "`find /Users/\`whoami\`/Library/Developer/Xcode/DerivedData/BirdDrop* | grep .app$`" -ov
 ```
 
-Finds where the compiled dir and generates .dmg in current dir.
+Finds where the compiled dir is and generates a .dmg in current dir.
 
 
 Twitter Account
