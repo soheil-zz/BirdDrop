@@ -13,4 +13,4 @@ hdiutil create BirdDrop.dmg -srcfolder BirdDrop.app/ -ov
 
 Twitter Account
 ===============
-Stay on top of the development cycle by following @soheil on Twitter.
+Stay on top of the development cycle by following <a href="https://twitter.com/soheil">@soheil</a> on Twitter.
