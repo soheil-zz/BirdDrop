@@ -5,7 +5,7 @@ Ever wonder if there was a better way to drag and drop stuff on your OSX? Well n
 
 Make File
 =========
-Currently the `make` file is only used to create .dmg image out of the app folder.
+Currently the `make` file is only used to create a .dmg image out of the app folder.
 
 ```
 hdiutil create BirdDrop.dmg -srcfolder "`find /Users/\`whoami\`/Library/Developer/Xcode/DerivedData/BirdDrop* | grep .app$`" -ov
