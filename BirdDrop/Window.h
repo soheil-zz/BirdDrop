@@ -17,5 +17,6 @@
     double startShakeIdealTime, noShakeUntilTime;
     int shakes;
 }
+- (void)didShakeGesture:(NSPoint)location;
 
 @end

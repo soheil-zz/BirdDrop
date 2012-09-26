@@ -45,18 +45,19 @@
         image = [[NSImage alloc] initWithPasteboard: [sender draggingPasteboard]];
         if ( [self getRow:&rowCurrent column:&columnCurrent forPoint:location] ) {
             Cell *cellPrev = [self cellAtRow:row column:column];
-            if (row != rowCurrent && column != columnCurrent) {
-                [cellPrev setImage:nil];
-            }
-            [cellPrev setImage:nil];
             Cell *cell = [self cellAtRow:rowCurrent column:columnCurrent];
+            if (row != rowCurrent || column != columnCurrent) {
+                if (currentImage) {
+                    [cellPrev setImage:currentImage];
+                }
+                currentImage = [cell image];
+            }
             row = rowCurrent;
             column = columnCurrent;
             if ( [image size].width > [self cellSize].width || [image size].height > [self cellSize].height )
             {
                 [image setSize: 1 / (image.size.width / image.size.height) + image.size.width / image.size.height > 2*1.1 ? [self rescaleRect:[image size] toFitInSize:[self cellSize]] : [self cellSize]];
             }
-            
             [cell setImage:image];
         }
     }
@@ -84,7 +85,14 @@
     pboard = [NSPasteboard pasteboardWithName: NSDragPboard];
     //    [self copyToPasteboard: pboard];
     
-    image = [((Cell *)[self selectedCell]) image];
+    NSInteger rowCurrent, columnCurrent;
+    NSPoint location=[self convertPoint:[a_theEvent locationInWindow] fromView:nil];
+    [self getRow:&rowCurrent column:&columnCurrent forPoint:location];
+    Cell *cell = [self cellAtRow:0 column:0];
+
+    
+    //[self selectedCell]
+    image = [((Cell *)cell) image];
     dragPoint = [self convertPoint: [a_theEvent locationInWindow]
                           fromView: nil];
     dragPoint.x -= ([image size].width * 0.5);

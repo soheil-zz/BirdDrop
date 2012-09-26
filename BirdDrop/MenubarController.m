@@ -1,5 +1,7 @@
 #import "MenubarController.h"
 #import "StatusItemView.h"
+#import "Window.h"
+#import "AppDelegate.h"
 
 @implementation MenubarController
 
@@ -17,7 +19,8 @@
         _statusItemView = [[StatusItemView alloc] initWithStatusItem:statusItem];
         _statusItemView.image = [NSImage imageNamed:@"Status"];
         _statusItemView.alternateImage = [NSImage imageNamed:@"StatusHighlighted"];
-        _statusItemView.action = @selector(togglePanel:);
+        _statusItemView.target = self;
+        _statusItemView.action = @selector(togglePanel);
     }
     return self;
 }
@@ -47,5 +50,10 @@
     self.statusItemView.isHighlighted = flag;
 }
 
+- (void)togglePanel
+{
+    Window *window = (Window *)((AppDelegate *)[NSApplication sharedApplication].delegate).window;
+    [window didShakeGesture:NSMakePoint(600, 10000)];
+}
 
 @end

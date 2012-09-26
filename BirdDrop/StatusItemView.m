@@ -50,6 +50,42 @@
     [NSApp sendAction:self.action to:self.target from:self];
 }
 
+- (void)rightMouseDown:(NSEvent *)theEvent
+{
+    NSMenu *menu = [[NSMenu alloc] init];
+    [menu setDelegate:self];
+    
+    NSMenuItem *item;
+    item = [[NSMenuItem alloc] initWithTitle:@"Learn More" action:@selector(learnMore) keyEquivalent:@""];
+    item.target = self;
+    [menu addItem:item];
+    
+    [menu addItem:[NSMenuItem separatorItem]];
+    
+    item = [[NSMenuItem alloc] initWithTitle:@"Quit" action:@selector(exit) keyEquivalent:@""];
+    item.target = self;
+    [menu addItem:item];
+    
+    [super rightMouseDown:theEvent];
+    [self setHighlighted:!self.isHighlighted];
+    [self.statusItem popUpStatusItemMenu:menu];
+}
+
+- (void)menuDidClose:(NSMenu *)menu
+{
+    [self setHighlighted:NO];
+}
+
+- (void)learnMore
+{
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.jog-a-lot.com/birddrop/"]];
+}
+
+- (void)exit
+{
+    exit(0);
+}
+
 #pragma mark -
 #pragma mark Accessors
 

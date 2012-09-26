@@ -11,6 +11,7 @@
 @interface Matrix : NSMatrix
 {
     NSInteger row, column;
+    NSImage *currentImage;
 }
 
 @end
